@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] w-full overflow-hidden bg-black text-white">
-      {/* Spline background */}
+      {/* Spline background - finance themed credit cards */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/8nsoLg1te84JZcE9/scene.splinecode"
+          scene="https://prod.spline.design/IKzHtP5ThSO83edK/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
-        {/* Subtle gradient vignettes */}
+        {/* Subtle gradient vignettes that don't block interaction */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(1200px_600px_at_50%_-20%,rgba(16,185,129,0.20),transparent)]" />
       </div>
@@ -24,7 +24,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-white/80 backdrop-blur"
         >
-          The new way to bank — simple, secure, green
+          Instant, secure payments — powered by smart cards
         </motion.div>
 
         <motion.h1
@@ -33,8 +33,8 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.1 }}
           className="text-4xl font-semibold leading-tight sm:text-6xl"
         >
-          Manage money with confidence
-          <span className="text-emerald-400"> and clarity</span>
+          The future of finance
+          <span className="text-emerald-400"> in your pocket</span>
         </motion.h1>
 
         <motion.p
@@ -43,7 +43,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.2 }}
           className="max-w-2xl text-lg text-white/80"
         >
-          All-in-one digital banking for everyday spending, saving, and growth — designed for speed, privacy, and effortless control.
+          Floating smart cards, real-time insights, and effortless control. Spend, save, and grow with a modern banking experience.
         </motion.p>
 
         <motion.div
